@@ -1,0 +1,122 @@
+[
+  {
+    "arm": "A0",
+    "expected_days": 30,
+    "status": "COMPLETED",
+    "hit": false,
+    "stale": false,
+    "summary": "The return policy states customers may return eligible unused goods within 30 days of delivery, requiring proof of purchase. This is a fictional workspace policy, not Olist's actual policy.",
+    "verified_facts": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+    "usage": {
+      "calls": 1,
+      "input_tokens": 447,
+      "output_tokens": 207,
+      "duration_ms": 5789.475208002841
+    }
+  },
+  {
+    "arm": "A0",
+    "expected_days": 14,
+    "status": "COMPLETED",
+    "hit": false,
+    "stale": false,
+    "summary": "The return policy states customers may return eligible unused goods within 14 days of delivery, requiring proof of purchase. This is a fictional workspace policy, not O.olist's actual policy.",
+    "verified_facts": "Customers may return eligible unused goods within 14 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+    "usage": {
+      "calls": 1,
+      "input_tokens": 449,
+      "output_tokens": 214,
+      "duration_ms": 6242.367540995474
+    }
+  },
+  {
+    "arm": "A1",
+    "expected_days": 30,
+    "status": "COMPLETED",
+    "hit": false,
+    "stale": false,
+    "summary": "The return policy states customers may return eligible unused goods within 30 days of delivery, requiring proof of purchase. This is a fictional workspace policy, not Olist's actual policy.",
+    "verified_facts": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+    "usage": {
+      "calls": 1,
+      "input_tokens": 447,
+      "output_tokens": 207,
+      "duration_ms": 5283.709249997628
+    }
+  },
+  {
+    "arm": "A1",
+    "expected_days": 14,
+    "status": "COMPLETED",
+    "hit": false,
+    "stale": false,
+    "summary": "The return policy states customers may return eligible unused goods within 14 days of delivery, requiring proof of purchase. This is a fictional workspace policy, not O.olist's actual policy.",
+    "verified_facts": "Customers may return eligible unused goods within 14 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+    "usage": {
+      "calls": 1,
+      "input_tokens": 449,
+      "output_tokens": 214,
+      "duration_ms": 5490.71895799716
+    }
+  },
+  {
+    "arm": "A2",
+    "expected_days": 30,
+    "status": "COMPLETED",
+    "hit": false,
+    "stale": false,
+    "summary": "The return policy states customers may return eligible unused goods within 30 days of delivery, requiring proof of purchase. This is a fictional workspace policy, not Olist's actual policy.",
+    "verified_facts": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+    "usage": {
+      "calls": 1,
+      "input_tokens": 447,
+      "output_tokens": 207,
+      "duration_ms": 5078.824833006365
+    }
+  },
+  {
+    "arm": "A2",
+    "expected_days": 14,
+    "status": "COMPLETED",
+    "hit": true,
+    "stale": true,
+    "summary": "The return policy states customers may return eligible unused goods within 30 days of delivery, requiring proof of purchase. This is a fictional workspace policy, not Olist's actual policy.",
+    "verified_facts": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+    "usage": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "duration_ms": 0
+    }
+  },
+  {
+    "arm": "A3",
+    "expected_days": 30,
+    "status": "COMPLETED",
+    "hit": false,
+    "stale": false,
+    "summary": "The return policy states customers may return eligible unused goods within 30 days of delivery, requiring proof of purchase. This is a fictional workspace policy, not Olist's actual policy.",
+    "verified_facts": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+    "usage": {
+      "calls": 1,
+      "input_tokens": 447,
+      "output_tokens": 207,
+      "duration_ms": 5958.300207988941
+    }
+  },
+  {
+    "arm": "A3",
+    "expected_days": 14,
+    "status": "COMPLETED",
+    "hit": false,
+    "stale": false,
+    "summary": "The return policy states customers may return eligible unused goods within 14 days of delivery, requiring proof of purchase. This is a fictional workspace policy, not O.olist's actual policy.",
+    "verified_facts": "Customers may return eligible unused goods within 14 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+    "usage": {
+      "calls": 1,
+      "input_tokens": 449,
+      "output_tokens": 214,
+      "duration_ms": 5965.238958990085
+    }
+  }
+]

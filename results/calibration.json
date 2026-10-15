@@ -1,0 +1,255 @@
+{
+  "split": "dev",
+  "pairs": [
+    {
+      "family": "policy-08",
+      "relation": "equivalent",
+      "similarity": 0.9328412230773674,
+      "scope_equal": true
+    },
+    {
+      "family": "policy-08",
+      "relation": "near-miss",
+      "similarity": 0.36849647686627707,
+      "scope_equal": false
+    },
+    {
+      "family": "policy-08",
+      "relation": "near-miss",
+      "similarity": 0.863242596522899,
+      "scope_equal": false
+    },
+    {
+      "family": "policy-09",
+      "relation": "equivalent",
+      "similarity": 0.9561159137289248,
+      "scope_equal": true
+    },
+    {
+      "family": "policy-09",
+      "relation": "near-miss",
+      "similarity": 0.358607345276425,
+      "scope_equal": false
+    },
+    {
+      "family": "policy-09",
+      "relation": "near-miss",
+      "similarity": 0.8922879326183737,
+      "scope_equal": false
+    },
+    {
+      "family": "policy-10",
+      "relation": "equivalent",
+      "similarity": 0.9376371353325887,
+      "scope_equal": true
+    },
+    {
+      "family": "policy-10",
+      "relation": "near-miss",
+      "similarity": 0.40165516691606057,
+      "scope_equal": false
+    },
+    {
+      "family": "policy-10",
+      "relation": "near-miss",
+      "similarity": 0.8428050824038011,
+      "scope_equal": false
+    },
+    {
+      "family": "policy-11",
+      "relation": "equivalent",
+      "similarity": 0.9567550542525488,
+      "scope_equal": true
+    },
+    {
+      "family": "policy-11",
+      "relation": "near-miss",
+      "similarity": 0.4990824162989738,
+      "scope_equal": false
+    },
+    {
+      "family": "policy-11",
+      "relation": "near-miss",
+      "similarity": 0.8748260753621936,
+      "scope_equal": false
+    },
+    {
+      "family": "metrics-08",
+      "relation": "equivalent",
+      "similarity": 0.8773422681022118,
+      "scope_equal": true
+    },
+    {
+      "family": "metrics-08",
+      "relation": "near-miss",
+      "similarity": 0.5351112454650082,
+      "scope_equal": false
+    },
+    {
+      "family": "metrics-08",
+      "relation": "near-miss",
+      "similarity": 0.9999999654231805,
+      "scope_equal": false
+    },
+    {
+      "family": "metrics-09",
+      "relation": "equivalent",
+      "similarity": 0.8604935451320954,
+      "scope_equal": true
+    },
+    {
+      "family": "metrics-09",
+      "relation": "near-miss",
+      "similarity": 0.6535690202192511,
+      "scope_equal": false
+    },
+    {
+      "family": "metrics-09",
+      "relation": "near-miss",
+      "similarity": 1.0000000579235258,
+      "scope_equal": false
+    },
+    {
+      "family": "metrics-10",
+      "relation": "equivalent",
+      "similarity": 0.8738529019960973,
+      "scope_equal": true
+    },
+    {
+      "family": "metrics-10",
+      "relation": "near-miss",
+      "similarity": 0.7303124543771171,
+      "scope_equal": false
+    },
+    {
+      "family": "metrics-10",
+      "relation": "near-miss",
+      "similarity": 0.9999996854382571,
+      "scope_equal": false
+    },
+    {
+      "family": "metrics-11",
+      "relation": "equivalent",
+      "similarity": 0.8421426865198937,
+      "scope_equal": true
+    },
+    {
+      "family": "metrics-11",
+      "relation": "near-miss",
+      "similarity": 0.6391860677647953,
+      "scope_equal": false
+    },
+    {
+      "family": "metrics-11",
+      "relation": "near-miss",
+      "similarity": 0.9999998615970136,
+      "scope_equal": false
+    },
+    {
+      "family": "investigation-08",
+      "relation": "equivalent",
+      "similarity": 0.8441239751195924,
+      "scope_equal": true
+    },
+    {
+      "family": "investigation-08",
+      "relation": "near-miss",
+      "similarity": 0.520071888934072,
+      "scope_equal": false
+    },
+    {
+      "family": "investigation-08",
+      "relation": "near-miss",
+      "similarity": 1.0000000605096022,
+      "scope_equal": false
+    },
+    {
+      "family": "investigation-09",
+      "relation": "equivalent",
+      "similarity": 0.8176209735675557,
+      "scope_equal": true
+    },
+    {
+      "family": "investigation-09",
+      "relation": "near-miss",
+      "similarity": 0.6703641881616922,
+      "scope_equal": false
+    },
+    {
+      "family": "investigation-09",
+      "relation": "near-miss",
+      "similarity": 0.9999997684001756,
+      "scope_equal": false
+    },
+    {
+      "family": "investigation-10",
+      "relation": "equivalent",
+      "similarity": 0.8395731092088943,
+      "scope_equal": true
+    },
+    {
+      "family": "investigation-10",
+      "relation": "near-miss",
+      "similarity": 0.7322595441755841,
+      "scope_equal": false
+    },
+    {
+      "family": "investigation-10",
+      "relation": "near-miss",
+      "similarity": 1.000000016614882,
+      "scope_equal": false
+    },
+    {
+      "family": "investigation-11",
+      "relation": "equivalent",
+      "similarity": 0.8037761357964175,
+      "scope_equal": true
+    },
+    {
+      "family": "investigation-11",
+      "relation": "near-miss",
+      "similarity": 0.6361967127023008,
+      "scope_equal": false
+    },
+    {
+      "family": "investigation-11",
+      "relation": "near-miss",
+      "similarity": 1.0000000520275751,
+      "scope_equal": false
+    }
+  ],
+  "thresholds": [
+    {
+      "threshold": 0.75,
+      "equivalent_hits": 12,
+      "unsafe_hits": 0
+    },
+    {
+      "threshold": 0.8,
+      "equivalent_hits": 12,
+      "unsafe_hits": 0
+    },
+    {
+      "threshold": 0.82,
+      "equivalent_hits": 10,
+      "unsafe_hits": 0
+    },
+    {
+      "threshold": 0.85,
+      "equivalent_hits": 7,
+      "unsafe_hits": 0
+    },
+    {
+      "threshold": 0.9,
+      "equivalent_hits": 4,
+      "unsafe_hits": 0
+    },
+    {
+      "threshold": 0.95,
+      "equivalent_hits": 2,
+      "unsafe_hits": 0
+    }
+  ],
+  "chosen_threshold": 0.82,
+  "note": "Calibrated on development families only. Scope checks precede reuse; embedding similarity is not an equivalence guarantee."
+}

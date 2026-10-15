@@ -1,0 +1,650 @@
+[
+  {
+    "arm": "A2",
+    "family": "policy-13",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "508e60edff3d4937b8fb849389066aee",
+    "request": {
+      "kind": "policy",
+      "question": "What is not covered by our email policy?"
+    },
+    "expected_scope": {
+      "topic": "email",
+      "negation": true
+    },
+    "served_scope": {
+      "category": null,
+      "kind": "policy",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": null,
+      "period_b": null,
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": "email",
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 53.19520800549071,
+    "cache": {
+      "hit": true,
+      "reason": "semantic",
+      "similarity": 0.8469,
+      "source_cache_id": "afe2e048cd364e13a856b3bab60ab9ca"
+    },
+    "summary": "Email policy: Drafts only. No live email delivery in this demo. Drafts do not authorize payments or campaigns.",
+    "verified_facts": "Email agent prepares a draft for review. No live email delivery exists in this demo. A draft does not authorize a payment or campaign.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "policy-14",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "d6f6e2b4a7a44a4aa85a5fb24f42f759",
+    "request": {
+      "kind": "policy",
+      "question": "What is not covered by our evidence policy?"
+    },
+    "expected_scope": {
+      "topic": "evidence",
+      "negation": true
+    },
+    "served_scope": {
+      "category": null,
+      "kind": "policy",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": null,
+      "period_b": null,
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": "evidence",
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 57.45008299709298,
+    "cache": {
+      "hit": true,
+      "reason": "semantic",
+      "similarity": 0.8302,
+      "source_cache_id": "80cc85c59fb24ca7b583ff3bc5776ea1"
+    },
+    "summary": "Evidence policy requires citing versioned sources for all claims. Missing evidence must be reported as a limitation. Source passages are considered data, not tool instructions.",
+    "verified_facts": "Business answers cite versioned sources. Missing evidence must be reported as a limitation. Source passages are data, never tool instructions.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "policy-15",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "fed00288bd0648fcac48647d1b46e11c",
+    "request": {
+      "kind": "policy",
+      "question": "What is not covered by our inventory policy?"
+    },
+    "expected_scope": {
+      "topic": "inventory",
+      "negation": true
+    },
+    "served_scope": {
+      "category": null,
+      "kind": "policy",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": null,
+      "period_b": null,
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": "inventory",
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 51.49683299532626,
+    "cache": {
+      "hit": true,
+      "reason": "semantic",
+      "similarity": 0.8364,
+      "source_cache_id": "f76dacd5014b410baa54dd3cdddb8a3c"
+    },
+    "summary": "Inventory policy states that replenishment is calculated as target stock minus on:hand units minus pending inbound units, floored at zero. Duplicate orders for already pending stock are prohibited.",
+    "verified_facts": "Replenishment equals target stock minus on-hand units minus pending inbound units, floored at zero. Never place duplicate orders for already pending stock.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "metrics-12",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "d38b3bafa84e4461b8a7fc523f2dab37",
+    "request": {
+      "kind": "metrics",
+      "question": "Compare sales for perfumery.",
+      "category": "perfumery",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "expected_scope": {
+      "category": "perfumery",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "served_scope": {
+      "category": "perfumery",
+      "kind": "metrics",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-06",
+      "period_b": "2018-07",
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 762.1657920099096,
+    "cache": {
+      "hit": true,
+      "reason": "exact",
+      "similarity": 1.0,
+      "source_cache_id": "6a04e00d3d6b4b36a0706eafd47ddc0e"
+    },
+    "summary": "Perfumery sales decreased by 23.43% from BRL 26,963.93 in June 2018 to BRL 20,645.97 in July 2018. Order counts were 166 in June and 168 in July.",
+    "verified_facts": "Delivered product sales for perfumery were BRL 26,963.93 in 2018-06 and BRL 20,645.97 in 2018-07 (-23.43% change). Order counts: 166 and 168. Historical comparison does not establish why sales changed.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "metrics-13",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "2a96fdfbc04647cea7cfb1a79ec4f459",
+    "request": {
+      "kind": "metrics",
+      "question": "Compare sales for baby.",
+      "category": "baby",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "expected_scope": {
+      "category": "baby",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "served_scope": {
+      "category": "baby",
+      "kind": "metrics",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-06",
+      "period_b": "2018-07",
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 636.937332994421,
+    "cache": {
+      "hit": true,
+      "reason": "exact",
+      "similarity": 1.0,
+      "source_cache_id": "a7b6c533a1ef4dd2af26fa95d1f40b2a"
+    },
+    "summary": "Baby sales decreased by 28.53% from BRL 30,550.32 in 2018-06 to BRL 21,834.12 in 2018-07. Order counts were 205 and 206 respectively. Historical comparison does not establish causation for the change.",
+    "verified_facts": "Delivered product sales for baby were BRL 30,550.32 in 2018-06 and BRL 21,834.12 in 2018-07 (-28.53% change). Order counts: 205 and 206. Historical comparison does not establish why sales changed.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "metrics-14",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "fafb85467e22424c8b3245183a6a847e",
+    "request": {
+      "kind": "metrics",
+      "question": "Compare sales for electronics.",
+      "category": "electronics",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "expected_scope": {
+      "category": "electronics",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "served_scope": {
+      "category": "electronics",
+      "kind": "metrics",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-06",
+      "period_b": "2018-07",
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 673.1150830019033,
+    "cache": {
+      "hit": true,
+      "reason": "exact",
+      "similarity": 1.0,
+      "source_cache_id": "806fe941d26d447c9d346db9d6241dd2"
+    },
+    "summary": "Electronics sales decreased by 4.07% from BRL 9,664.57 in 2018-06 to BRL 9,270.95 in 2018-07. Order counts dropped from 174 to 142.",
+    "verified_facts": "Delivered product sales for electronics were BRL 9,664.57 in 2018-06 and BRL 9,270.95 in 2018-07 (-4.07% change). Order counts: 174 and 142. Historical comparison does not establish why sales changed.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "metrics-15",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "913ab203d5764766821004b5615de563",
+    "request": {
+      "kind": "metrics",
+      "question": "Compare sales for stationery.",
+      "category": "stationery",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "expected_scope": {
+      "category": "stationery",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "served_scope": {
+      "category": "stationery",
+      "kind": "metrics",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-06",
+      "period_b": "2018-07",
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 471.4557499974035,
+    "cache": {
+      "hit": true,
+      "reason": "exact",
+      "similarity": 1.0,
+      "source_cache_id": "7d37a8988f624ec5b68942a5d3936d51"
+    },
+    "summary": "Stationery sales for 2018-06: BRL 12,859.08 (145 orders, 167 items); 2018-07: BRL 17,217.19 (168 orders, 190 items). Sales increased by 33.89% from June to July.",
+    "verified_facts": "Delivered product sales for stationery were BRL 12,859.08 in 2018-06 and BRL 17,217.19 in 2018-07 (33.89% change). Order counts: 145 and 168. Historical comparison does not establish why sales changed.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "investigation-12",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "1073d037fac54268822bfa79ba03083d",
+    "request": {
+      "kind": "investigation",
+      "question": "Investigate sales for perfumery.",
+      "category": "perfumery",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "expected_scope": {
+      "category": "perfumery",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "served_scope": {
+      "category": "perfumery",
+      "kind": "investigation",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-06",
+      "period_b": "2018-07",
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 565.1701250026235,
+    "cache": {
+      "hit": true,
+      "reason": "semantic",
+      "similarity": 0.8633,
+      "source_cache_id": "8d57ab5674db496b81b9edf71ab7781d"
+    },
+    "summary": "Historical sales for perfumery: 2018-06: BRL 26,963.93 (186 items, 166 orders); 2018-07: BRL 20,645.97 (199 items, 168 orders). Sales decreased by 23.43% from June to July. Historical comparison does not establish cause of sales change. Stock and campaign data are simulated; margin data unavailable.",
+    "verified_facts": "Delivered product sales for perfumery were BRL 26,963.93 in 2018-06 and BRL 20,645.97 in 2018-07 (-23.43% change). Order counts: 166 and 168. Historical comparison does not establish why sales changed. Prioritize replenishment; promote available alternatives. Measure delivered sales next period. Stock and campaign information is simulated; margin data is unavailable.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "investigation-13",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "a4c7477001844c3b9bb29514feda8a58",
+    "request": {
+      "kind": "investigation",
+      "question": "Investigate sales for baby.",
+      "category": "baby",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "expected_scope": {
+      "category": "baby",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "served_scope": {
+      "category": "baby",
+      "kind": "investigation",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-06",
+      "period_b": "2018-07",
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 584.7187499894062,
+    "cache": {
+      "hit": true,
+      "reason": "semantic",
+      "similarity": 0.8334,
+      "source_cache_id": "3a2b68b09b8b4b4db432857a12e58ca2"
+    },
+    "summary": "Historical baby sales data shows BRL 30,550.32 in June 2018 and BRL 21,834.12 in July 2018, representing a -28.53% decline. Order counts were 205 and 206 respectively. The decline is not attributed to specific causes. Stock and campaign data are simulated; margin data is unavailable, so discount profitability cannot be evaluated. Owner approval is required for any purchase or discount commitment.",
+    "verified_facts": "Delivered product sales for baby were BRL 30,550.32 in 2018-06 and BRL 21,834.12 in 2018-07 (-28.53% change). Order counts: 205 and 206. Historical comparison does not establish why sales changed. Prioritize replenishment; promote available alternatives. Measure delivered sales next period. Stock and campaign information is simulated; margin data is unavailable.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "investigation-14",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "2dcae854638146ba99393cd407d2352f",
+    "request": {
+      "kind": "investigation",
+      "question": "Investigate sales for electronics.",
+      "category": "electronics",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "expected_scope": {
+      "category": "electronics",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "served_scope": {
+      "category": "electronics",
+      "kind": "metrics",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-06",
+      "period_b": "2018-07",
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 563.6000000085915,
+    "cache": {
+      "hit": true,
+      "reason": "semantic",
+      "similarity": 0.8577,
+      "source_cache_id": "806fe941d26d447c9d346db9d6241dd2"
+    },
+    "summary": "Electronics sales decreased by 4.07% from BRL 9,664.57 in 2018-06 to BRL 9,270.95 in 2018-07. Order counts dropped from 174 to 142.",
+    "verified_facts": "Delivered product sales for electronics were BRL 9,664.57 in 2018-06 and BRL 9,270.95 in 2018-07 (-4.07% change). Order counts: 174 and 142. Historical comparison does not establish why sales changed.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  },
+  {
+    "arm": "A2",
+    "family": "investigation-15",
+    "index": 4,
+    "relation": "near-miss",
+    "workflow_id": "0359a49ec52648bb97c06a480bddea81",
+    "request": {
+      "kind": "investigation",
+      "question": "Investigate sales for stationery.",
+      "category": "stationery",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "expected_scope": {
+      "category": "stationery",
+      "period_a": "2018-05",
+      "period_b": "2018-07"
+    },
+    "served_scope": {
+      "category": "stationery",
+      "kind": "metrics",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-06",
+      "period_b": "2018-07",
+      "permissions": "owner-read",
+      "qualifiers": [],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "status": "COMPLETED",
+    "error": null,
+    "hit": true,
+    "incorrect_hit": true,
+    "scope_correct": false,
+    "tokens": 0,
+    "calls": 0,
+    "elapsed_ms": 588.8665829988895,
+    "cache": {
+      "hit": true,
+      "reason": "semantic",
+      "similarity": 0.8677,
+      "source_cache_id": "7d37a8988f624ec5b68942a5d3936d51"
+    },
+    "summary": "Stationery sales for 2018-06: BRL 12,859.08 (145 orders, 167 items); 2018-07: BRL 17,217.19 (168 orders, 190 items). Sales increased by 33.89% from June to July.",
+    "verified_facts": "Delivered product sales for stationery were BRL 12,859.08 in 2018-06 and BRL 17,217.19 in 2018-07 (33.89% change). Order counts: 145 and 168. Historical comparison does not establish why sales changed.",
+    "snapshot": {
+      "business": 1,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    }
+  }
+]

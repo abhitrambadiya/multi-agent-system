@@ -1,0 +1,1 @@
+Interrupted development audit. This partial run used manifest v1, whose boundary near-misses could overlap another split. Excluded from all reported held-out results. Manifest v2 keeps near-miss categories/topics within each split and has a disjointness regression test.

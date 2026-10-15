@@ -1,0 +1,919 @@
+{
+  "health": {
+    "ready": true,
+    "model": "qwen3:4b",
+    "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7"
+  },
+  "embedding": "MINILM",
+  "workflows": [
+    {
+      "id": "ed87563d381341d7a488646d150d05b3",
+      "request": {
+        "cache": "A0",
+        "category": "furniture_decor",
+        "kind": "policy",
+        "period_a": "2018-05",
+        "period_b": "2018-06",
+        "question": "What is our return policy?",
+        "sku": "DEMO-CHAIR"
+      },
+      "status": "COMPLETED",
+      "result": {
+        "action_owners": [],
+        "cache": {
+          "hit": false,
+          "reason": "disabled"
+        },
+        "citations": [
+          "68882dd0691ee8bf856b51b2"
+        ],
+        "embedding_mode": "MINILM",
+        "evidence": [
+          {
+            "id": "68882dd0691ee8bf856b51b2",
+            "locator": "policy/returns",
+            "source": "SIMULATED_POLICY",
+            "text": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+            "version": "1"
+          },
+          {
+            "id": "cb8b79b396e717d02f411cc6",
+            "locator": "policy/discounts",
+            "source": "SIMULATED_POLICY",
+            "text": "Discounts require a margin check and owner approval before any financial commitment. If stock is low, prioritize replenishment and promote available alternatives.",
+            "version": "1"
+          },
+          {
+            "id": "f3b13b4263faed6858890925",
+            "locator": "order_reviews/6f3ae5a43a1ce5f0c23a640be902525c/0",
+            "source": "REAL_PUBLIC_REVIEW",
+            "text": "Order-level review, score 4/5 (Portuguese): A entrega foi rápida, porém a tampa de uma panela veio cortada. Preciso que façam a troca.",
+            "version": "967e41e04fc3"
+          },
+          {
+            "id": "e4965ee928face222c1abb39",
+            "locator": "policy/quality",
+            "source": "SIMULATED_POLICY",
+            "text": "Review excerpts describe orders. A review from a multi-item order cannot automatically be attributed to a specific product. Negative feedback is evidence of reported experience, not a proven cause of falling sales.",
+            "version": "1"
+          }
+        ],
+        "findings": {
+          "research": {
+            "citations": [
+              "68882dd0691ee8bf856b51b2",
+              "cb8b79b396e717d02f411cc6",
+              "f3b13b4263faed6858890925",
+              "e4965ee928face222c1abb39"
+            ],
+            "limitation": "Reviews are sampled order-level reports; causation is unproven."
+          }
+        },
+        "limitations": [
+          "The return policy is fictional and not the actual Olist policy.",
+          "Discounts require a margin check and owner approval before any financial commitment (from source id: cb8b79b396e717d02f411cc6).",
+          "Review excerpts describe orders but cannot automatically be attributed to specific products (from source id: e4965ee928face222c1abb39).",
+          "Missing margin data limits discount evaluation; only the owner can authorize spending (from source id: cb8b79b396e717d02f411cc6)."
+        ],
+        "mode": "LOCAL_LLM",
+        "scope": {
+          "category": null,
+          "kind": "policy",
+          "metric": "sales",
+          "negation": false,
+          "numbers": [],
+          "output": "summary-v1",
+          "period_a": null,
+          "period_b": null,
+          "permissions": "owner-read",
+          "qualifiers": [],
+          "sku": null,
+          "topic": "returns",
+          "topics": [],
+          "workspace": "local-demo"
+        },
+        "snapshot": {
+          "business": 1,
+          "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+          "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+          "embedding": "MINILM",
+          "mode": "LOCAL_LLM",
+          "model": "qwen3:4b",
+          "prompt": "v2-money-guard"
+        },
+        "summary": "The return policy states that customers may return eligible unused goods within 30 days of delivery, provided they keep proof of purchase. This policy is fictional and not the actual Olist policy.",
+        "verified_facts": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy."
+      },
+      "created": 1791981274.1343648,
+      "error": null,
+      "events": [
+        {
+          "seq": 39,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "manager",
+          "type": "task_started",
+          "payload": {
+            "title": "Resolve request and delegate specialists"
+          },
+          "created": 1791981274.140123
+        },
+        {
+          "seq": 40,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "manager",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "category": null,
+              "kind": "policy",
+              "metric": "sales",
+              "negation": false,
+              "numbers": [],
+              "output": "summary-v1",
+              "period_a": null,
+              "period_b": null,
+              "permissions": "owner-read",
+              "qualifiers": [],
+              "sku": null,
+              "topic": "returns",
+              "topics": [],
+              "workspace": "local-demo"
+            },
+            "title": "Resolve request and delegate specialists"
+          },
+          "created": 1791981274.141313
+        },
+        {
+          "seq": 41,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "manager",
+          "type": "cache_rejected",
+          "payload": {
+            "hit": false,
+            "reason": "disabled"
+          },
+          "created": 1791981274.148986
+        },
+        {
+          "seq": 42,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "research",
+          "type": "task_started",
+          "payload": {
+            "title": "Retrieve policy and order-level feedback"
+          },
+          "created": 1791981274.1500642
+        },
+        {
+          "seq": 43,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "research",
+          "type": "task_completed",
+          "payload": {
+            "output": [
+              {
+                "id": "68882dd0691ee8bf856b51b2",
+                "locator": "policy/returns",
+                "source": "SIMULATED_POLICY",
+                "text": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+                "version": "1"
+              },
+              {
+                "id": "cb8b79b396e717d02f411cc6",
+                "locator": "policy/discounts",
+                "source": "SIMULATED_POLICY",
+                "text": "Discounts require a margin check and owner approval before any financial commitment. If stock is low, prioritize replenishment and promote available alternatives.",
+                "version": "1"
+              },
+              {
+                "id": "f3b13b4263faed6858890925",
+                "locator": "order_reviews/6f3ae5a43a1ce5f0c23a640be902525c/0",
+                "source": "REAL_PUBLIC_REVIEW",
+                "text": "Order-level review, score 4/5 (Portuguese): A entrega foi rápida, porém a tampa de uma panela veio cortada. Preciso que façam a troca.",
+                "version": "967e41e04fc3"
+              },
+              {
+                "id": "e4965ee928face222c1abb39",
+                "locator": "policy/quality",
+                "source": "SIMULATED_POLICY",
+                "text": "Review excerpts describe orders. A review from a multi-item order cannot automatically be attributed to a specific product. Negative feedback is evidence of reported experience, not a proven cause of falling sales.",
+                "version": "1"
+              }
+            ],
+            "title": "Retrieve policy and order-level feedback"
+          },
+          "created": 1791981275.005281
+        },
+        {
+          "seq": 44,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "research",
+          "type": "evidence_found",
+          "payload": {
+            "id": "68882dd0691ee8bf856b51b2",
+            "locator": "policy/returns",
+            "source": "SIMULATED_POLICY",
+            "text": "Customers may return eligible unused goods within 30 days of delivery. Keep proof of purchase. This is the fictional workspace return policy, not Olist policy.",
+            "version": "1"
+          },
+          "created": 1791981275.0065181
+        },
+        {
+          "seq": 45,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "research",
+          "type": "evidence_found",
+          "payload": {
+            "id": "cb8b79b396e717d02f411cc6",
+            "locator": "policy/discounts",
+            "source": "SIMULATED_POLICY",
+            "text": "Discounts require a margin check and owner approval before any financial commitment. If stock is low, prioritize replenishment and promote available alternatives.",
+            "version": "1"
+          },
+          "created": 1791981275.007494
+        },
+        {
+          "seq": 46,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "research",
+          "type": "evidence_found",
+          "payload": {
+            "id": "f3b13b4263faed6858890925",
+            "locator": "order_reviews/6f3ae5a43a1ce5f0c23a640be902525c/0",
+            "source": "REAL_PUBLIC_REVIEW",
+            "text": "Order-level review, score 4/5 (Portuguese): A entrega foi rápida, porém a tampa de uma panela veio cortada. Preciso que façam a troca.",
+            "version": "967e41e04fc3"
+          },
+          "created": 1791981275.008245
+        },
+        {
+          "seq": 47,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "research",
+          "type": "evidence_found",
+          "payload": {
+            "id": "e4965ee928face222c1abb39",
+            "locator": "policy/quality",
+            "source": "SIMULATED_POLICY",
+            "text": "Review excerpts describe orders. A review from a multi-item order cannot automatically be attributed to a specific product. Negative feedback is evidence of reported experience, not a proven cause of falling sales.",
+            "version": "1"
+          },
+          "created": 1791981275.0089788
+        },
+        {
+          "seq": 48,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "manager",
+          "type": "task_started",
+          "payload": {
+            "title": "Synthesize grounded findings"
+          },
+          "created": 1791981275.0136461
+        },
+        {
+          "seq": 49,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "manager",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "citations": [
+                "68882dd0691ee8bf856b51b2"
+              ],
+              "limitations": [
+                "The return policy is fictional and not the actual Olist policy.",
+                "Discounts require a margin check and owner approval before any financial commitment (from source id: cb8b79b396e717d02f411cc6).",
+                "Review excerpts describe orders but cannot automatically be attributed to specific products (from source id: e4965ee928face222c1abb39).",
+                "Missing margin data limits discount evaluation; only the owner can authorize spending (from source id: cb8b79b396e717d02f411cc6)."
+              ],
+              "mode": "LOCAL_LLM",
+              "summary": "The return policy states that customers may return eligible unused goods within 30 days of delivery, provided they keep proof of purchase. This policy is fictional and not the actual Olist policy."
+            },
+            "title": "Synthesize grounded findings"
+          },
+          "created": 1791981283.1742542
+        },
+        {
+          "seq": 50,
+          "workflow_id": "ed87563d381341d7a488646d150d05b3",
+          "agent": "manager",
+          "type": "workflow_completed",
+          "payload": {
+            "cache": {
+              "hit": false,
+              "reason": "disabled"
+            }
+          },
+          "created": 1791981283.177643
+        }
+      ],
+      "actions": [],
+      "usage": {
+        "calls": 1,
+        "input_tokens": 440,
+        "output_tokens": 227,
+        "duration_ms": 8154.909000004409
+      }
+    },
+    {
+      "id": "ec76836e6dd34feb99eafd3bcbcd758b",
+      "request": {
+        "cache": "A0",
+        "category": "furniture_decor",
+        "kind": "investigation",
+        "period_a": "2018-05",
+        "period_b": "2018-06",
+        "question": "Investigate the sales change and propose a plan.",
+        "sku": "DEMO-CHAIR"
+      },
+      "status": "COMPLETED",
+      "result": {
+        "action_owners": [
+          {
+            "action": "Review replenishment proposal",
+            "kpi": "Stock shortfall",
+            "role": "inventory"
+          },
+          {
+            "action": "Monitor next complete period",
+            "kpi": "Delivered product sales",
+            "role": "sales"
+          }
+        ],
+        "cache": {
+          "hit": false,
+          "reason": "disabled"
+        },
+        "citations": [
+          "d7703e082fb111e5de938307",
+          "2432bf2d4003f979e82b4ff1"
+        ],
+        "embedding_mode": "MINILM",
+        "evidence": [
+          {
+            "id": "d7703e082fb111e5de938307",
+            "locator": "metrics/furniture_decor/2018-05/2018-06",
+            "source": "REAL_PUBLIC",
+            "text": "{\"category\":\"furniture_decor\",\"currency\":\"BRL\",\"definition\":\"Delivered orders; product sales exclude freight. Item rows counted once. Period is purchase month. Historical association does not prove cause.\",\"delta_cents\":-1166423,\"delta_pct\":-21.72,\"periods\":[{\"freight_cents\":1133499,\"items\":597,\"orders\":456,\"period\":\"2018-05\",\"sales_cents\":5370645},{\"freight_cents\":1027365,\"items\":402,\"orders\":316,\"period\":\"2018-06\",\"sales_cents\":4204222}],\"source\":\"REAL_PUBLIC\"}",
+            "version": "967e41e04fc3"
+          },
+          {
+            "id": "aec8489ea12d403eaa4f3440",
+            "locator": "inventory/DEMO-CHAIR",
+            "source": "SIMULATED",
+            "text": "{\"inbound\":0,\"limitation\":\"Simulation is not evidence of historical Olist stockouts.\",\"on_hand\":4,\"shortfall\":20,\"sku\":\"DEMO-CHAIR\",\"source\":\"SIMULATED\",\"target\":24}",
+            "version": "1"
+          },
+          {
+            "id": "e4965ee928face222c1abb39",
+            "locator": "policy/quality",
+            "source": "SIMULATED_POLICY",
+            "text": "Review excerpts describe orders. A review from a multi-item order cannot automatically be attributed to a specific product. Negative feedback is evidence of reported experience, not a proven cause of falling sales.",
+            "version": "1"
+          },
+          {
+            "id": "7def821c025c74773e31d593",
+            "locator": "policy/delivery",
+            "source": "SIMULATED_POLICY",
+            "text": "A simulated purchase order reserves budget and creates pending inbound stock. On-hand stock increases only after the owner records a separate simulated delivery receipt.",
+            "version": "1"
+          },
+          {
+            "id": "65cda1c069366778e80aa48e",
+            "locator": "policy/forecast",
+            "source": "SIMULATED_POLICY",
+            "text": "Historical monthly comparisons are descriptive. Demand forecasts require separate validation and cannot be treated as guaranteed future sales.",
+            "version": "1"
+          },
+          {
+            "id": "2404db52e28e19a9332babbe",
+            "locator": "policy/suppliers",
+            "source": "SIMULATED_POLICY",
+            "text": "Choose among active simulated supplier offers using unit cost and lead time. Revalidate the exact offer immediately before approved execution.",
+            "version": "1"
+          },
+          {
+            "id": "2432bf2d4003f979e82b4ff1",
+            "locator": "budget/current",
+            "source": "SIMULATED",
+            "text": "{\"available_cents\":500000,\"currency\":\"BRL\",\"decision\":\"No spending authorized. Any purchase or discount commitment needs owner approval. Profit margin data is unavailable.\",\"source\":\"SIMULATED\"}",
+            "version": "1"
+          }
+        ],
+        "findings": {
+          "email": {
+            "body": "Prioritize replenishment; promote available alternatives. Measure delivered sales next period. Please review the evidence and any separate purchase proposal.",
+            "sent": false,
+            "status": "DRAFT_ONLY",
+            "subject": "Sales investigation and proposed next steps"
+          },
+          "finance": {
+            "available_cents": 500000,
+            "currency": "BRL",
+            "decision": "No spending authorized. Any purchase or discount commitment needs owner approval. Profit margin data is unavailable.",
+            "source": "SIMULATED"
+          },
+          "inventory": {
+            "inbound": 0,
+            "limitation": "Simulation is not evidence of historical Olist stockouts.",
+            "on_hand": 4,
+            "shortfall": 20,
+            "sku": "DEMO-CHAIR",
+            "source": "SIMULATED",
+            "target": 24
+          },
+          "marketing": {
+            "challenge": "Inventory challenges a discount on scarce stock.",
+            "followups": 1,
+            "proposal": "Consider a discount campaign, subject to margin and stock checks.",
+            "revised_plan": "Prioritize replenishment; promote available alternatives. Measure delivered sales next period.",
+            "source": "SIMULATED"
+          },
+          "research": {
+            "citations": [
+              "e4965ee928face222c1abb39",
+              "7def821c025c74773e31d593",
+              "65cda1c069366778e80aa48e",
+              "2404db52e28e19a9332babbe"
+            ],
+            "limitation": "Reviews are sampled order-level reports; causation is unproven."
+          },
+          "sales": {
+            "category": "furniture_decor",
+            "currency": "BRL",
+            "definition": "Delivered orders; product sales exclude freight. Item rows counted once. Period is purchase month. Historical association does not prove cause.",
+            "delta_cents": -1166423,
+            "delta_pct": -21.72,
+            "periods": [
+              {
+                "freight_cents": 1133499,
+                "items": 597,
+                "orders": 456,
+                "period": "2018-05",
+                "sales_cents": 5370645
+              },
+              {
+                "freight_cents": 1027365,
+                "items": 402,
+                "orders": 316,
+                "period": "2018-06",
+                "sales_cents": 4204222
+              }
+            ],
+            "source": "REAL_PUBLIC"
+          }
+        },
+        "limitations": [
+          "Historical comparison does not establish cause of sales change",
+          "Margin data unavailable prevents discount evaluation",
+          "Simulation is not evidence of historical stockouts",
+          "Demand forecasts require validation and cannot be guaranteed",
+          "No purchase executed without owner approval"
+        ],
+        "mode": "LOCAL_LLM",
+        "scope": {
+          "category": "furniture_decor",
+          "kind": "investigation",
+          "metric": "sales",
+          "negation": false,
+          "numbers": [],
+          "output": "summary-v1",
+          "period_a": "2018-05",
+          "period_b": "2018-06",
+          "permissions": "owner-read",
+          "qualifiers": [],
+          "sku": null,
+          "topic": null,
+          "topics": [],
+          "workspace": "local-demo"
+        },
+        "snapshot": {
+          "business": 1,
+          "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+          "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+          "embedding": "MINILM",
+          "mode": "LOCAL_LLM",
+          "model": "qwen3:4b",
+          "prompt": "v2-money-guard"
+        },
+        "summary": "Furniture decor sales decreased by 21.72% from BRL 53,706.45 in May 2018 to BRL 42,042.22 in June 2018. Historical comparison does not establish cause. No spending authorized due to unavailable margin data. Prioritize replenishment and promote alternatives.",
+        "verified_facts": "Delivered product sales for furniture_decor were BRL 53,706.45 in 2018-05 and BRL 42,042.22 in 2018-06 (-21.72% change). Order counts: 456 and 316. Historical comparison does not establish why sales changed. Prioritize replenishment; promote available alternatives. Measure delivered sales next period. Stock and campaign information is simulated; margin data is unavailable."
+      },
+      "created": 1791981283.180823,
+      "error": null,
+      "events": [
+        {
+          "seq": 51,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "manager",
+          "type": "task_started",
+          "payload": {
+            "title": "Resolve request and delegate specialists"
+          },
+          "created": 1791981283.1835551
+        },
+        {
+          "seq": 52,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "manager",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "category": "furniture_decor",
+              "kind": "investigation",
+              "metric": "sales",
+              "negation": false,
+              "numbers": [],
+              "output": "summary-v1",
+              "period_a": "2018-05",
+              "period_b": "2018-06",
+              "permissions": "owner-read",
+              "qualifiers": [],
+              "sku": null,
+              "topic": null,
+              "topics": [],
+              "workspace": "local-demo"
+            },
+            "title": "Resolve request and delegate specialists"
+          },
+          "created": 1791981283.603302
+        },
+        {
+          "seq": 53,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "manager",
+          "type": "cache_rejected",
+          "payload": {
+            "hit": false,
+            "reason": "disabled"
+          },
+          "created": 1791981283.610958
+        },
+        {
+          "seq": 54,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "sales",
+          "type": "task_started",
+          "payload": {
+            "title": "Compare historical delivered sales"
+          },
+          "created": 1791981283.612447
+        },
+        {
+          "seq": 55,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "sales",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "category": "furniture_decor",
+              "currency": "BRL",
+              "definition": "Delivered orders; product sales exclude freight. Item rows counted once. Period is purchase month. Historical association does not prove cause.",
+              "delta_cents": -1166423,
+              "delta_pct": -21.72,
+              "periods": [
+                {
+                  "freight_cents": 1133499,
+                  "items": 597,
+                  "orders": 456,
+                  "period": "2018-05",
+                  "sales_cents": 5370645
+                },
+                {
+                  "freight_cents": 1027365,
+                  "items": 402,
+                  "orders": 316,
+                  "period": "2018-06",
+                  "sales_cents": 4204222
+                }
+              ],
+              "source": "REAL_PUBLIC"
+            },
+            "title": "Compare historical delivered sales"
+          },
+          "created": 1791981284.100663
+        },
+        {
+          "seq": 56,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "sales",
+          "type": "evidence_found",
+          "payload": {
+            "id": "d7703e082fb111e5de938307",
+            "locator": "metrics/furniture_decor/2018-05/2018-06",
+            "source": "REAL_PUBLIC",
+            "text": "{\"category\":\"furniture_decor\",\"currency\":\"BRL\",\"definition\":\"Delivered orders; product sales exclude freight. Item rows counted once. Period is purchase month. Historical association does not prove cause.\",\"delta_cents\":-1166423,\"delta_pct\":-21.72,\"periods\":[{\"freight_cents\":1133499,\"items\":597,\"orders\":456,\"period\":\"2018-05\",\"sales_cents\":5370645},{\"freight_cents\":1027365,\"items\":402,\"orders\":316,\"period\":\"2018-06\",\"sales_cents\":4204222}],\"source\":\"REAL_PUBLIC\"}",
+            "version": "967e41e04fc3"
+          },
+          "created": 1791981284.102732
+        },
+        {
+          "seq": 57,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "inventory",
+          "type": "task_started",
+          "payload": {
+            "title": "Check simulated stock and pending deliveries"
+          },
+          "created": 1791981284.107245
+        },
+        {
+          "seq": 58,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "inventory",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "inbound": 0,
+              "limitation": "Simulation is not evidence of historical Olist stockouts.",
+              "on_hand": 4,
+              "shortfall": 20,
+              "sku": "DEMO-CHAIR",
+              "source": "SIMULATED",
+              "target": 24
+            },
+            "title": "Check simulated stock and pending deliveries"
+          },
+          "created": 1791981284.107834
+        },
+        {
+          "seq": 59,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "inventory",
+          "type": "evidence_found",
+          "payload": {
+            "id": "aec8489ea12d403eaa4f3440",
+            "locator": "inventory/DEMO-CHAIR",
+            "source": "SIMULATED",
+            "text": "{\"inbound\":0,\"limitation\":\"Simulation is not evidence of historical Olist stockouts.\",\"on_hand\":4,\"shortfall\":20,\"sku\":\"DEMO-CHAIR\",\"source\":\"SIMULATED\",\"target\":24}",
+            "version": "1"
+          },
+          "created": 1791981284.1087759
+        },
+        {
+          "seq": 60,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "research",
+          "type": "task_started",
+          "payload": {
+            "title": "Retrieve policy and order-level feedback"
+          },
+          "created": 1791981284.109791
+        },
+        {
+          "seq": 61,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "research",
+          "type": "task_completed",
+          "payload": {
+            "output": [
+              {
+                "id": "e4965ee928face222c1abb39",
+                "locator": "policy/quality",
+                "source": "SIMULATED_POLICY",
+                "text": "Review excerpts describe orders. A review from a multi-item order cannot automatically be attributed to a specific product. Negative feedback is evidence of reported experience, not a proven cause of falling sales.",
+                "version": "1"
+              },
+              {
+                "id": "7def821c025c74773e31d593",
+                "locator": "policy/delivery",
+                "source": "SIMULATED_POLICY",
+                "text": "A simulated purchase order reserves budget and creates pending inbound stock. On-hand stock increases only after the owner records a separate simulated delivery receipt.",
+                "version": "1"
+              },
+              {
+                "id": "65cda1c069366778e80aa48e",
+                "locator": "policy/forecast",
+                "source": "SIMULATED_POLICY",
+                "text": "Historical monthly comparisons are descriptive. Demand forecasts require separate validation and cannot be treated as guaranteed future sales.",
+                "version": "1"
+              },
+              {
+                "id": "2404db52e28e19a9332babbe",
+                "locator": "policy/suppliers",
+                "source": "SIMULATED_POLICY",
+                "text": "Choose among active simulated supplier offers using unit cost and lead time. Revalidate the exact offer immediately before approved execution.",
+                "version": "1"
+              }
+            ],
+            "title": "Retrieve policy and order-level feedback"
+          },
+          "created": 1791981284.124192
+        },
+        {
+          "seq": 62,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "research",
+          "type": "evidence_found",
+          "payload": {
+            "id": "e4965ee928face222c1abb39",
+            "locator": "policy/quality",
+            "source": "SIMULATED_POLICY",
+            "text": "Review excerpts describe orders. A review from a multi-item order cannot automatically be attributed to a specific product. Negative feedback is evidence of reported experience, not a proven cause of falling sales.",
+            "version": "1"
+          },
+          "created": 1791981284.125108
+        },
+        {
+          "seq": 63,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "research",
+          "type": "evidence_found",
+          "payload": {
+            "id": "7def821c025c74773e31d593",
+            "locator": "policy/delivery",
+            "source": "SIMULATED_POLICY",
+            "text": "A simulated purchase order reserves budget and creates pending inbound stock. On-hand stock increases only after the owner records a separate simulated delivery receipt.",
+            "version": "1"
+          },
+          "created": 1791981284.125773
+        },
+        {
+          "seq": 64,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "research",
+          "type": "evidence_found",
+          "payload": {
+            "id": "65cda1c069366778e80aa48e",
+            "locator": "policy/forecast",
+            "source": "SIMULATED_POLICY",
+            "text": "Historical monthly comparisons are descriptive. Demand forecasts require separate validation and cannot be treated as guaranteed future sales.",
+            "version": "1"
+          },
+          "created": 1791981284.126358
+        },
+        {
+          "seq": 65,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "research",
+          "type": "evidence_found",
+          "payload": {
+            "id": "2404db52e28e19a9332babbe",
+            "locator": "policy/suppliers",
+            "source": "SIMULATED_POLICY",
+            "text": "Choose among active simulated supplier offers using unit cost and lead time. Revalidate the exact offer immediately before approved execution.",
+            "version": "1"
+          },
+          "created": 1791981284.126932
+        },
+        {
+          "seq": 66,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "marketing",
+          "type": "task_started",
+          "payload": {
+            "title": "Propose campaign and request Inventory review"
+          },
+          "created": 1791981284.127935
+        },
+        {
+          "seq": 67,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "marketing",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "challenge": "Inventory challenges a discount on scarce stock.",
+              "followups": 1,
+              "proposal": "Consider a discount campaign, subject to margin and stock checks.",
+              "revised_plan": "Prioritize replenishment; promote available alternatives. Measure delivered sales next period.",
+              "source": "SIMULATED"
+            },
+            "title": "Propose campaign and request Inventory review"
+          },
+          "created": 1791981284.1288362
+        },
+        {
+          "seq": 68,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "inventory",
+          "type": "agent_message",
+          "payload": {
+            "message": "Inventory challenges a discount on scarce stock.",
+            "to": "marketing"
+          },
+          "created": 1791981284.129837
+        },
+        {
+          "seq": 69,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "manager",
+          "type": "plan_revised",
+          "payload": {
+            "followup_limit": 1,
+            "plan": "Prioritize replenishment; promote available alternatives. Measure delivered sales next period.",
+            "reason": "Inventory challenges a discount on scarce stock."
+          },
+          "created": 1791981284.130583
+        },
+        {
+          "seq": 70,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "finance",
+          "type": "task_started",
+          "payload": {
+            "title": "Check affordability and approval boundary"
+          },
+          "created": 1791981284.133908
+        },
+        {
+          "seq": 71,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "finance",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "available_cents": 500000,
+              "currency": "BRL",
+              "decision": "No spending authorized. Any purchase or discount commitment needs owner approval. Profit margin data is unavailable.",
+              "source": "SIMULATED"
+            },
+            "title": "Check affordability and approval boundary"
+          },
+          "created": 1791981284.134515
+        },
+        {
+          "seq": 72,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "email",
+          "type": "task_started",
+          "payload": {
+            "title": "Draft an internal owner update"
+          },
+          "created": 1791981284.136279
+        },
+        {
+          "seq": 73,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "email",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "body": "Prioritize replenishment; promote available alternatives. Measure delivered sales next period. Please review the evidence and any separate purchase proposal.",
+              "sent": false,
+              "status": "DRAFT_ONLY",
+              "subject": "Sales investigation and proposed next steps"
+            },
+            "title": "Draft an internal owner update"
+          },
+          "created": 1791981284.13699
+        },
+        {
+          "seq": 74,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "manager",
+          "type": "task_started",
+          "payload": {
+            "title": "Synthesize grounded findings"
+          },
+          "created": 1791981284.138247
+        },
+        {
+          "seq": 75,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "manager",
+          "type": "task_completed",
+          "payload": {
+            "output": {
+              "citations": [
+                "d7703e082fb111e5de938307",
+                "2432bf2d4003f979e82b4ff1"
+              ],
+              "limitations": [
+                "Historical comparison does not establish cause of sales change",
+                "Margin data unavailable prevents discount evaluation",
+                "Simulation is not evidence of historical stockouts",
+                "Demand forecasts require validation and cannot be guaranteed",
+                "No purchase executed without owner approval"
+              ],
+              "mode": "LOCAL_LLM",
+              "summary": "Furniture decor sales decreased by 21.72% from BRL 53,706.45 in May 2018 to BRL 42,042.22 in June 2018. Historical comparison does not establish cause. No spending authorized due to unavailable margin data. Prioritize replenishment and promote alternatives."
+            },
+            "title": "Synthesize grounded findings"
+          },
+          "created": 1791981290.468107
+        },
+        {
+          "seq": 76,
+          "workflow_id": "ec76836e6dd34feb99eafd3bcbcd758b",
+          "agent": "manager",
+          "type": "workflow_completed",
+          "payload": {
+            "cache": {
+              "hit": false,
+              "reason": "disabled"
+            }
+          },
+          "created": 1791981290.471492
+        }
+      ],
+      "actions": [],
+      "usage": {
+        "calls": 1,
+        "input_tokens": 891,
+        "output_tokens": 204,
+        "duration_ms": 6327.081875002477
+      }
+    }
+  ]
+}

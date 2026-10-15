@@ -1,0 +1,192 @@
+{
+  "id": "6fc3fb948593459f8c6779e5e86894e0",
+  "request": {
+    "cache": "A3",
+    "category": "furniture_decor",
+    "kind": "investigation",
+    "period_a": "2018-05",
+    "period_b": "2018-06",
+    "question": "Why did furniture_decor sales change? Investigate and propose a plan.",
+    "sku": "DEMO-CHAIR"
+  },
+  "status": "COMPLETED",
+  "result": {
+    "action_owners": [
+      {
+        "action": "Review replenishment proposal",
+        "kpi": "Stock shortfall",
+        "role": "inventory"
+      },
+      {
+        "action": "Monitor next complete period",
+        "kpi": "Delivered product sales",
+        "role": "sales"
+      }
+    ],
+    "cache": {
+      "hit": false,
+      "reason": "no equivalent candidate"
+    },
+    "citations": [
+      "d7703e082fb111e5de938307",
+      "605f9fb5bcfb426bcb4c0462",
+      "7d95d4dcb9856e7b4ed740ec",
+      "9a30e98734308eb916c1bf95",
+      "2d9b386a79a5c6be630918d2"
+    ],
+    "embedding_mode": "MINILM",
+    "evidence": [
+      {
+        "id": "d7703e082fb111e5de938307",
+        "locator": "metrics/furniture_decor/2018-05/2018-06",
+        "source": "REAL_PUBLIC",
+        "text": "{\"category\":\"furniture_decor\",\"currency\":\"BRL\",\"definition\":\"Delivered orders; product sales exclude freight. Item rows counted once. Period is purchase month. Historical association does not prove cause.\",\"delta_cents\":-1166423,\"delta_pct\":-21.72,\"periods\":[{\"freight_cents\":1133499,\"items\":597,\"orders\":456,\"period\":\"2018-05\",\"sales_cents\":5370645},{\"freight_cents\":1027365,\"items\":402,\"orders\":316,\"period\":\"2018-06\",\"sales_cents\":4204222}],\"source\":\"REAL_PUBLIC\"}",
+        "version": "967e41e04fc3"
+      },
+      {
+        "id": "8c4bdbaa41479235367bc2b1",
+        "locator": "inventory/DEMO-CHAIR",
+        "source": "SIMULATED",
+        "text": "{\"inbound\":0,\"limitation\":\"Simulation is not evidence of historical Olist stockouts.\",\"on_hand\":24,\"shortfall\":0,\"sku\":\"DEMO-CHAIR\",\"source\":\"SIMULATED\",\"target\":24}",
+        "version": "3"
+      },
+      {
+        "id": "9a30e98734308eb916c1bf95",
+        "locator": "policy/quality",
+        "source": "SIMULATED_POLICY",
+        "text": "Review excerpts describe orders. A review from a multi-item order cannot automatically be attributed to a specific product. Negative feedback is evidence of reported experience, not a proven cause of falling sales.",
+        "version": "3"
+      },
+      {
+        "id": "2d9b386a79a5c6be630918d2",
+        "locator": "policy/campaign",
+        "source": "SIMULATED_POLICY",
+        "text": "Campaign reach and warehouse availability are simulated. Historical order data cannot establish advertising conversion, stockouts or causal marketing effects.",
+        "version": "3"
+      },
+      {
+        "id": "0f33a0802c687264ac5b252f",
+        "locator": "order_reviews/53e616f83058b7f7ee042c1f3c2ec051/0",
+        "source": "REAL_PUBLIC_REVIEW",
+        "text": "Order-level review, score 1/5 (Portuguese): a loja entregou outro produto sem previa concord\u00e2ncia",
+        "version": "967e41e04fc3"
+      },
+      {
+        "id": "7d95d4dcb9856e7b4ed740ec",
+        "locator": "policy/forecast",
+        "source": "SIMULATED_POLICY",
+        "text": "Historical monthly comparisons are descriptive. Demand forecasts require separate validation and cannot be treated as guaranteed future sales.",
+        "version": "3"
+      },
+      {
+        "id": "605f9fb5bcfb426bcb4c0462",
+        "locator": "budget/current",
+        "source": "SIMULATED",
+        "text": "{\"available_cents\":250000,\"currency\":\"BRL\",\"decision\":\"A separate owner approval is required before any purchase or discount commitment. The listed budget is available.\",\"discount_limitation\":\"Profit margin is unknown, so discount profitability cannot be evaluated.\",\"source\":\"SIMULATED\"}",
+        "version": "3"
+      }
+    ],
+    "findings": {
+      "email": {
+        "body": "Review margins before offering any discount; monitor next-period sales. Please review the evidence and any separate purchase proposal.",
+        "sent": false,
+        "status": "DRAFT_ONLY",
+        "subject": "Sales investigation and proposed next steps"
+      },
+      "finance": {
+        "available_cents": 250000,
+        "currency": "BRL",
+        "decision": "A separate owner approval is required before any purchase or discount commitment. The listed budget is available.",
+        "discount_limitation": "Profit margin is unknown, so discount profitability cannot be evaluated.",
+        "source": "SIMULATED"
+      },
+      "inventory": {
+        "inbound": 0,
+        "limitation": "Simulation is not evidence of historical Olist stockouts.",
+        "on_hand": 24,
+        "shortfall": 0,
+        "sku": "DEMO-CHAIR",
+        "source": "SIMULATED",
+        "target": 24
+      },
+      "marketing": {
+        "challenge": "Inventory reports adequate stock or pending replenishment.",
+        "followups": 1,
+        "proposal": "Consider a discount campaign, subject to margin and stock checks.",
+        "revised_plan": "Review margins before offering any discount; monitor next-period sales.",
+        "source": "SIMULATED"
+      },
+      "research": {
+        "citations": [
+          "9a30e98734308eb916c1bf95",
+          "2d9b386a79a5c6be630918d2",
+          "0f33a0802c687264ac5b252f",
+          "7d95d4dcb9856e7b4ed740ec"
+        ],
+        "limitation": "Reviews are sampled order-level reports; causation is unproven."
+      },
+      "sales": {
+        "category": "furniture_decor",
+        "currency": "BRL",
+        "definition": "Delivered orders; product sales exclude freight. Item rows counted once. Period is purchase month. Historical association does not prove cause.",
+        "delta_cents": -1166423,
+        "delta_pct": -21.72,
+        "periods": [
+          {
+            "freight_cents": 1133499,
+            "items": 597,
+            "orders": 456,
+            "period": "2018-05",
+            "sales_cents": 5370645
+          },
+          {
+            "freight_cents": 1027365,
+            "items": 402,
+            "orders": 316,
+            "period": "2018-06",
+            "sales_cents": 4204222
+          }
+        ],
+        "source": "REAL_PUBLIC"
+      }
+    },
+    "limitations": [
+      "Historical comparison does not establish cause of sales change",
+      "Discount profitability cannot be evaluated without margin data",
+      "Simulation data does not reflect historical stockouts or causal marketing effects",
+      "Owner approval required for any purchase or discount"
+    ],
+    "mode": "LOCAL_LLM",
+    "scope": {
+      "category": "furniture_decor",
+      "kind": "investigation",
+      "metric": "sales",
+      "negation": false,
+      "numbers": [],
+      "output": "summary-v1",
+      "period_a": "2018-05",
+      "period_b": "2018-06",
+      "permissions": "owner-read",
+      "qualifiers": [
+        "did"
+      ],
+      "sku": null,
+      "topic": null,
+      "topics": [],
+      "workspace": "local-demo"
+    },
+    "snapshot": {
+      "business": 3,
+      "dataset": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "embedding": "MINILM",
+      "mode": "LOCAL_LLM",
+      "model": "qwen3:4b",
+      "prompt": "v2-money-guard"
+    },
+    "summary": "Furniture_decor sales decreased by 21.72% (BRL -11,664.23) from May 2018 to June 2018. Historical data shows 597 items and 456 orders in May, compared to 402 items and 316 orders in June. The change is descriptive, not causal. No cause is identified. Discount evaluation is limited by unknown profit margins. Stock and campaign data are simulated and not evidence of historical stockouts. Owner approval required for any purchase or discount.",
+    "verified_facts": "Delivered product sales for furniture_decor were BRL 53,706.45 in 2018-05 and BRL 42,042.22 in 2018-06 (-21.72% change). Order counts: 456 and 316. Historical comparison does not establish why sales changed. Review margins before offering any discount; monitor next-period sales. Stock and campaign information is simulated; margin data is unavailable."
+  },
+  "created": 1791981423.607121,
+  "error": null
+}

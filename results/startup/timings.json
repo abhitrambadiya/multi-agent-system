@@ -1,0 +1,7 @@
+{
+  "embedding_module_import_ms": 80.16037500055972,
+  "embedding_constructor_ms": 9628.9860830002,
+  "initial_corpus_and_index_ms": 1004.7196249943227,
+  "documents": 136,
+  "note": "Separate startup measurement in a fresh Python process with already downloaded files and potentially warm OS file cache; excludes Ollama model load. Benchmark invocation ledgers record generation load time separately."
+}

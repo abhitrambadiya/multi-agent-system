@@ -1,0 +1,25 @@
+{
+  "run_id": "20261014T123602Z",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "mode": "LOCAL_LLM",
+  "split": "dev",
+  "arms": [
+    {
+      "arm": "A0",
+      "requests": 5,
+      "tokens": 2860,
+      "calls": 5,
+      "hits": 0,
+      "incorrect_hits": 0,
+      "scope_hit_precision": null,
+      "failures": 0,
+      "p50_ms": 3580.4115409991937,
+      "p95_ms": 3823.4203750034794,
+      "scope_accuracy": 1.0
+    }
+  ],
+  "manifest_sha256": "7711f7af5526a0be2a3f3cf0c91906abe8dfc53adde6d75e0b0970ca0163eb54",
+  "threshold": 0.82,
+  "note": "One paired pass. Incorrect hits mean oracle scope mismatch, not independent human scoring of generated prose. Gold labels excluded from prompts. Small synthetic query sample; no universal reliability claim."
+}

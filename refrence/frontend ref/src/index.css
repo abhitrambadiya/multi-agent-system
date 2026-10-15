@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0D0F12;
+  --s1: #171A20;
+  --s2: #1e222a;
+  --ln: #262b35;
+  --ink: #e6e8ee;
+  --mu: #8b93a3;
+  --ac: #8b7cff;
+  --ok: #4cc38a;
+  --rw: 52px;
+  --iw: 312px;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: hidden;
+  margin: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ln);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a4150;
+}
+
+/* Character & Office Animations */
+.sp * {
+  transform-box: fill-box;
+}
+
+/* Walking animations */
+.walk .lL {
+  animation: sw 0.45s infinite alternate;
+}
+.walk .lR {
+  animation: sw 0.45s infinite alternate-reverse;
+}
+.walk .aL {
+  animation: sa 0.45s infinite alternate;
+  transform-origin: 50% 0;
+}
+.walk .aR {
+  animation: sa 0.45s infinite alternate-reverse;
+  transform-origin: 50% 0;
+}
+
+@keyframes sw {
+  from { transform: translateY(-1.6px); }
+  to { transform: translateY(1.6px); }
+}
+
+@keyframes sa {
+  from { transform: rotate(-14deg); }
+  to { transform: rotate(14deg); }
+}
+
+/* Typing animations */
+.type .aL {
+  animation: ty 0.26s infinite alternate;
+}
+.type .aR {
+  animation: ty 0.26s 0.13s infinite alternate;
+}
+
+@keyframes ty {
+  to { transform: translateY(-1.8px); }
+}
+
+/* Coffee drinking animation */
+.coffee .aR {
+  transform-origin: 50% 0;
+  animation: cf 6s ease-in-out infinite;
+}
+
+@keyframes cf {
+  0%, 12% { transform: rotate(0); }
+  25%, 70% { transform: rotate(150deg); }
+  85%, 100% { transform: rotate(0); }
+}
+
+/* Breathing animation */
+.idle .tor,
+.coffee .tor,
+.type .hd {
+  animation: br 3.4s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+
+@keyframes br {
+  50% { transform: scaleY(1.035); }
+}
+
+/* Directional Facing & Seating */
+.u .eyes {
+  display: none;
+}
+.hb {
+  opacity: 0;
+}
+.u .hb {
+  opacity: 1;
+}
+.seat .lg {
+  display: none;
+}
+
+/* Monitor line pulse */
+.ln {
+  transform-box: fill-box;
+  transform-origin: left;
+  animation: ln 3.2s ease-in-out infinite;
+}
+
+@keyframes ln {
+  0%, 100% { transform: scaleX(0.35); }
+  50% { transform: scaleX(1); }
+}
+
+/* Coffee steam */
+.stm {
+  opacity: 0;
+  animation: stm 2.4s ease-in infinite;
+}
+
+@keyframes stm {
+  0% { opacity: 0; transform: translateY(2px); }
+  40% { opacity: 0.7; }
+  100% { opacity: 0; transform: translateY(-8px); }
+}
+
+/* Agent selection ring & pulse */
+.agent {
+  cursor: pointer;
+  outline: none;
+}
+.ring {
+  opacity: 0;
+  transition: opacity 0.2s;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.agent:hover .ring,
+.agent.sel .ring {
+  opacity: 0.9;
+}
+.agent.done .ring {
+  stroke: #4cc38a !important;
+  animation: fl 1.4s ease-out;
+}
+
+@keyframes fl {
+  0% { opacity: 1; transform: scale(0.8); }
+  100% { opacity: 0; transform: scale(1.8); }
+}
+
+/* Label visibility */
+.lbl {
+  transition: opacity 0.2s;
+}
+.nolbl .lbl {
+  opacity: 0;
+}
+.nolbl .agent:hover .lbl {
+  opacity: 1;
+}
+
+/* Walkway paths visibility */
+#paths {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.showp #paths {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sp *, .ln, .stm {
+    animation: none !important;
+  }
+}

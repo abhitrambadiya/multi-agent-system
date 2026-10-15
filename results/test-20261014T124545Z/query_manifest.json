@@ -1,0 +1,3862 @@
+{
+  "version": "v2-disjoint-splits",
+  "families": [
+    {
+      "id": "policy-00",
+      "class": "policy",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our returns policy?"
+          },
+          "expected_scope": {
+            "topic": "returns",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our returns policy?"
+          },
+          "expected_scope": {
+            "topic": "returns",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our returns policy."
+          },
+          "expected_scope": {
+            "topic": "returns",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our purchasing policy?"
+          },
+          "expected_scope": {
+            "topic": "purchasing",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our returns policy?"
+          },
+          "expected_scope": {
+            "topic": "returns",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-01",
+      "class": "policy",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our purchasing policy?"
+          },
+          "expected_scope": {
+            "topic": "purchasing",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our purchasing policy?"
+          },
+          "expected_scope": {
+            "topic": "purchasing",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our purchasing policy."
+          },
+          "expected_scope": {
+            "topic": "purchasing",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our delivery policy?"
+          },
+          "expected_scope": {
+            "topic": "delivery",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our purchasing policy?"
+          },
+          "expected_scope": {
+            "topic": "purchasing",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-02",
+      "class": "policy",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our delivery policy?"
+          },
+          "expected_scope": {
+            "topic": "delivery",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our delivery policy?"
+          },
+          "expected_scope": {
+            "topic": "delivery",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our delivery policy."
+          },
+          "expected_scope": {
+            "topic": "delivery",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our discounts policy?"
+          },
+          "expected_scope": {
+            "topic": "discounts",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our delivery policy?"
+          },
+          "expected_scope": {
+            "topic": "delivery",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-03",
+      "class": "policy",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our discounts policy?"
+          },
+          "expected_scope": {
+            "topic": "discounts",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our discounts policy?"
+          },
+          "expected_scope": {
+            "topic": "discounts",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our discounts policy."
+          },
+          "expected_scope": {
+            "topic": "discounts",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our privacy policy?"
+          },
+          "expected_scope": {
+            "topic": "privacy",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our discounts policy?"
+          },
+          "expected_scope": {
+            "topic": "discounts",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-04",
+      "class": "policy",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our privacy policy?"
+          },
+          "expected_scope": {
+            "topic": "privacy",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our privacy policy?"
+          },
+          "expected_scope": {
+            "topic": "privacy",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our privacy policy."
+          },
+          "expected_scope": {
+            "topic": "privacy",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our budget policy?"
+          },
+          "expected_scope": {
+            "topic": "budget",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our privacy policy?"
+          },
+          "expected_scope": {
+            "topic": "privacy",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-05",
+      "class": "policy",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our budget policy?"
+          },
+          "expected_scope": {
+            "topic": "budget",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our budget policy?"
+          },
+          "expected_scope": {
+            "topic": "budget",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our budget policy."
+          },
+          "expected_scope": {
+            "topic": "budget",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our cache policy?"
+          },
+          "expected_scope": {
+            "topic": "cache",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our budget policy?"
+          },
+          "expected_scope": {
+            "topic": "budget",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-06",
+      "class": "policy",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our cache policy?"
+          },
+          "expected_scope": {
+            "topic": "cache",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our cache policy?"
+          },
+          "expected_scope": {
+            "topic": "cache",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our cache policy."
+          },
+          "expected_scope": {
+            "topic": "cache",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our campaign policy?"
+          },
+          "expected_scope": {
+            "topic": "campaign",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our cache policy?"
+          },
+          "expected_scope": {
+            "topic": "cache",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-07",
+      "class": "policy",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our campaign policy?"
+          },
+          "expected_scope": {
+            "topic": "campaign",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our campaign policy?"
+          },
+          "expected_scope": {
+            "topic": "campaign",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our campaign policy."
+          },
+          "expected_scope": {
+            "topic": "campaign",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our returns policy?"
+          },
+          "expected_scope": {
+            "topic": "returns",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our campaign policy?"
+          },
+          "expected_scope": {
+            "topic": "campaign",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-08",
+      "class": "policy",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our quality policy?"
+          },
+          "expected_scope": {
+            "topic": "quality",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our quality policy?"
+          },
+          "expected_scope": {
+            "topic": "quality",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our quality policy."
+          },
+          "expected_scope": {
+            "topic": "quality",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our cancellation policy?"
+          },
+          "expected_scope": {
+            "topic": "cancellation",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our quality policy?"
+          },
+          "expected_scope": {
+            "topic": "quality",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-09",
+      "class": "policy",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our cancellation policy?"
+          },
+          "expected_scope": {
+            "topic": "cancellation",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our cancellation policy?"
+          },
+          "expected_scope": {
+            "topic": "cancellation",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our cancellation policy."
+          },
+          "expected_scope": {
+            "topic": "cancellation",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our currency policy?"
+          },
+          "expected_scope": {
+            "topic": "currency",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our cancellation policy?"
+          },
+          "expected_scope": {
+            "topic": "cancellation",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-10",
+      "class": "policy",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our currency policy?"
+          },
+          "expected_scope": {
+            "topic": "currency",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our currency policy?"
+          },
+          "expected_scope": {
+            "topic": "currency",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our currency policy."
+          },
+          "expected_scope": {
+            "topic": "currency",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our suppliers policy?"
+          },
+          "expected_scope": {
+            "topic": "suppliers",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our currency policy?"
+          },
+          "expected_scope": {
+            "topic": "currency",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-11",
+      "class": "policy",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our suppliers policy?"
+          },
+          "expected_scope": {
+            "topic": "suppliers",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our suppliers policy?"
+          },
+          "expected_scope": {
+            "topic": "suppliers",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our suppliers policy."
+          },
+          "expected_scope": {
+            "topic": "suppliers",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our quality policy?"
+          },
+          "expected_scope": {
+            "topic": "quality",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our suppliers policy?"
+          },
+          "expected_scope": {
+            "topic": "suppliers",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-12",
+      "class": "policy",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our forecast policy?"
+          },
+          "expected_scope": {
+            "topic": "forecast",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our forecast policy?"
+          },
+          "expected_scope": {
+            "topic": "forecast",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our forecast policy."
+          },
+          "expected_scope": {
+            "topic": "forecast",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our email policy?"
+          },
+          "expected_scope": {
+            "topic": "email",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our forecast policy?"
+          },
+          "expected_scope": {
+            "topic": "forecast",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-13",
+      "class": "policy",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our email policy?"
+          },
+          "expected_scope": {
+            "topic": "email",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our email policy?"
+          },
+          "expected_scope": {
+            "topic": "email",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our email policy."
+          },
+          "expected_scope": {
+            "topic": "email",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our evidence policy?"
+          },
+          "expected_scope": {
+            "topic": "evidence",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our email policy?"
+          },
+          "expected_scope": {
+            "topic": "email",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-14",
+      "class": "policy",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our evidence policy?"
+          },
+          "expected_scope": {
+            "topic": "evidence",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our evidence policy?"
+          },
+          "expected_scope": {
+            "topic": "evidence",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our evidence policy."
+          },
+          "expected_scope": {
+            "topic": "evidence",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our inventory policy?"
+          },
+          "expected_scope": {
+            "topic": "inventory",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our evidence policy?"
+          },
+          "expected_scope": {
+            "topic": "evidence",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "policy-15",
+      "class": "policy",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "policy",
+            "question": "What is our inventory policy?"
+          },
+          "expected_scope": {
+            "topic": "inventory",
+            "negation": false
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "policy",
+            "question": "What is our inventory policy?"
+          },
+          "expected_scope": {
+            "topic": "inventory",
+            "negation": false
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "policy",
+            "question": "Please describe our inventory policy."
+          },
+          "expected_scope": {
+            "topic": "inventory",
+            "negation": false
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "policy",
+            "question": "What is our forecast policy?"
+          },
+          "expected_scope": {
+            "topic": "forecast",
+            "negation": false
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "policy",
+            "question": "What is not covered by our inventory policy?"
+          },
+          "expected_scope": {
+            "topic": "inventory",
+            "negation": true
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-00",
+      "class": "metrics",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-01",
+      "class": "metrics",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-02",
+      "class": "metrics",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-03",
+      "class": "metrics",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-04",
+      "class": "metrics",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-05",
+      "class": "metrics",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-06",
+      "class": "metrics",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-07",
+      "class": "metrics",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-08",
+      "class": "metrics",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for auto.",
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-09",
+      "class": "metrics",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for auto.",
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for auto.",
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for auto.",
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for toys.",
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for auto.",
+            "category": "auto",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-10",
+      "class": "metrics",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for toys.",
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for toys.",
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for toys.",
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for toys.",
+            "category": "toys",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-11",
+      "class": "metrics",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-12",
+      "class": "metrics",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for baby.",
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-13",
+      "class": "metrics",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for baby.",
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for baby.",
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for baby.",
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for baby.",
+            "category": "baby",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-14",
+      "class": "metrics",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "metrics-15",
+      "class": "metrics",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "metrics",
+            "question": "Please compare historical sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "metrics",
+            "question": "Compare sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-00",
+      "class": "investigation",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-01",
+      "class": "investigation",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for health_beauty.",
+            "category": "health_beauty",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "health_beauty",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-02",
+      "class": "investigation",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for sports_leisure.",
+            "category": "sports_leisure",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "sports_leisure",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-03",
+      "class": "investigation",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for furniture_decor.",
+            "category": "furniture_decor",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "furniture_decor",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-04",
+      "class": "investigation",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for computers_accessories.",
+            "category": "computers_accessories",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "computers_accessories",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-05",
+      "class": "investigation",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for housewares.",
+            "category": "housewares",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "housewares",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-06",
+      "class": "investigation",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for watches_gifts.",
+            "category": "watches_gifts",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "watches_gifts",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-07",
+      "class": "investigation",
+      "split": "design",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for bed_bath_table.",
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "bed_bath_table",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for telephony.",
+            "category": "telephony",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "telephony",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-08",
+      "class": "investigation",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for auto.",
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-09",
+      "class": "investigation",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for auto.",
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for auto.",
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for auto.",
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for toys.",
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for auto.",
+            "category": "auto",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "auto",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-10",
+      "class": "investigation",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for toys.",
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for toys.",
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for toys.",
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for toys.",
+            "category": "toys",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "toys",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-11",
+      "class": "investigation",
+      "split": "dev",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for garden_tools.",
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "garden_tools",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for cool_stuff.",
+            "category": "cool_stuff",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "cool_stuff",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-12",
+      "class": "investigation",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for baby.",
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-13",
+      "class": "investigation",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for baby.",
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for baby.",
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for baby.",
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for baby.",
+            "category": "baby",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "baby",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-14",
+      "class": "investigation",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for electronics.",
+            "category": "electronics",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "electronics",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    },
+    {
+      "id": "investigation-15",
+      "class": "investigation",
+      "split": "test",
+      "requests": [
+        {
+          "index": 0,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "seed"
+        },
+        {
+          "index": 1,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "identical"
+        },
+        {
+          "index": 2,
+          "request": {
+            "kind": "investigation",
+            "question": "Please investigate historical sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "equivalent"
+        },
+        {
+          "index": 3,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for perfumery.",
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "perfumery",
+            "period_a": "2018-06",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        },
+        {
+          "index": 4,
+          "request": {
+            "kind": "investigation",
+            "question": "Investigate sales for stationery.",
+            "category": "stationery",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "expected_scope": {
+            "category": "stationery",
+            "period_a": "2018-05",
+            "period_b": "2018-07"
+          },
+          "relation": "near-miss"
+        }
+      ]
+    }
+  ],
+  "note": "Synthetic question families over real Olist metrics and fictional policies. Family splits fixed before threshold calibration. Gold metadata is excluded from model prompts."
+}
